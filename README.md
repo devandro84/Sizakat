@@ -12,6 +12,7 @@ SiZakat adalah aplikasi pengelolaan zakat yang membantu dalam perhitungan dan pe
 - Pengelolaan Data Penerima Zakat
 - Pembuatan Laporan
 - Pencetakan Bukti Pembayaran
+- Dan masih banyak lagi fitur-fitur lainnya
 
 
 ## Teknologi yang Digunakan
