@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiZakat - Aplikasi Pengelolaan Zakat</title>
+    <meta name="description" content="Aplikasi pengelolaan zakat offline untuk masjid dan lembaga zakat" />
+    <meta name="author" content="SiZakat" />
+
+    <meta property="og:title" content="SiZakat - Aplikasi Pengelolaan Zakat" />
+    <meta property="og:description" content="Aplikasi pengelolaan zakat offline untuk masjid dan lembaga zakat" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/LogoZakat.png" />
+    <link rel="icon" type="image/png" href="/LogoZakat.png" />
+
+    <meta name="theme-color" content="#16a34a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SiZakat" />
+    <link rel="apple-touch-icon" href="/LogoZakat.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('ServiceWorker registered:', registration);
+            })
+            .catch(error => {
+              console.log('ServiceWorker registration failed:', error);
+            });
+        });
+      }
+    </script>
+  </head>
+
+  <body class="bg-background">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
