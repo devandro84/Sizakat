@@ -11,12 +11,12 @@ import LoginScreen from './src/screens/LoginScreen';
 import PinLoginScreen from './src/screens/PinLoginScreen';
 import PaymentPage from './src/pages/PaymentPage';
 import ReportsPage from './src/pages/ReportsPage';
-import RecipientsScreen from './src/screens/RecipientsScreen';
-import NiatZakatScreen from './src/screens/NiatZakatScreen';
-import ZakatMalScreen from './src/screens/ZakatMalScreen';
-import ZakatPenghasilanScreen from './src/screens/ZakatPenghasilanScreen';
-import SettingsScreen from './src/screens/SettingsScreen';
-import KurbanScreen from './src/screens/KurbanScreen';
+import RecipientsPage from './src/pages/RecipientsPage';
+import NiatZakat from './src/pages/NiatZakat';
+import ZakatMalPage from './src/pages/ZakatMalPage';
+import ZakatPenghasilanPage from './src/pages/ZakatPenghasilanPage';
+import SettingsPage from './src/pages/SettingsPage';
+import KurbanPage from './src/pages/KurbanPage';
 
 const Stack = createNativeStackNavigator();
 
@@ -69,32 +69,32 @@ export default function App() {
           />
           <Stack.Screen 
             name="Recipients" 
-            component={RecipientsScreen} 
+            component={RecipientsPage} 
             options={{ title: 'Penerima Zakat' }}
           />
           <Stack.Screen 
             name="NiatZakat" 
-            component={NiatZakatScreen} 
+            component={NiatZakat} 
             options={{ title: 'Niat & Ijab Kabul Zakat' }}
           />
           <Stack.Screen 
             name="ZakatMal" 
-            component={ZakatMalScreen} 
+            component={ZakatMalPage} 
             options={{ title: 'Zakat Māl (Harta)' }}
           />
           <Stack.Screen 
             name="ZakatPenghasilan" 
-            component={ZakatPenghasilanScreen} 
+            component={ZakatPenghasilanPage} 
             options={{ title: 'Zakat Penghasilan' }}
           />
           <Stack.Screen 
             name="Settings" 
-            component={SettingsScreen} 
+            component={SettingsPage} 
             options={{ title: 'Pengaturan' }}
           />
           <Stack.Screen 
             name="Kurban" 
-            component={KurbanScreen} 
+            component={KurbanPage} 
             options={{ title: 'Kurban' }}
           />
         </Stack.Navigator>
