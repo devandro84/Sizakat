@@ -91,10 +91,9 @@ const LoginScreen = ({ navigation }) => {
 
       <View style={styles.formContainer}>
         <View style={styles.inputContainer}>
-          <Image
-            source={require('../assets/icons/user-icon.png')}
-            style={styles.inputIcon}
-          />
+          <View style={styles.inputIcon}>
+            <Text style={styles.userIconText}>👤</Text>
+          </View>
           <TextInput
             style={styles.input}
             placeholder="Nama"
@@ -173,7 +172,12 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
     marginRight: 12,
-    tintColor: '#999',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  userIconText: {
+    fontSize: 16,
+    color: '#999',
   },
   input: {
     flex: 1,
