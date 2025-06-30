@@ -102,7 +102,7 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.header}>
         <View style={styles.headerLeft}>
           <Image 
-            source={require('../assets/icons/icon.png')} 
+            source={require('../../public/LogoZakat.png')} 
             style={styles.logo} 
           />
           <Text style={styles.title}>SiZakat</Text>
