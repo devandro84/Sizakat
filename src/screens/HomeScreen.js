@@ -40,49 +40,49 @@ const HomeScreen = ({ navigation }) => {
     { 
       id: 'zakatFitrah', 
       title: 'Zakat Fitrah', 
-      icon: require('../../assets/zakat-fitrah.png'),
+      icon: require('../assets/icons/zakat-fitrah.png'),
       screen: 'Payment'
     },
     { 
       id: 'zakatMal', 
       title: 'Zakat Māl', 
-      icon: require('../../assets/zakat-mal.png'),
+      icon: require('../assets/icons/zakat-mal.png'),
       screen: 'ZakatMal'
     },
     { 
       id: 'zakatPenghasilan', 
       title: 'Zakat Penghasilan', 
-      icon: require('../../assets/zakat-penghasilan.png'),
+      icon: require('../assets/icons/zakat-penghasilan.png'),
       screen: 'ZakatPenghasilan'
     },
     { 
       id: 'reports', 
       title: 'Laporan', 
-      icon: require('../../assets/laporan.png'),
+      icon: require('../assets/icons/Laporan.png'),
       screen: 'Reports'
     },
     { 
       id: 'recipients', 
       title: 'Penerima Zakat', 
-      icon: require('../../assets/penerima-zakat.png'),
+      icon: require('../assets/icons/PenerimaZakat.png'),
       screen: 'Recipients'
     },
     { 
       id: 'niatZakat', 
       title: 'Niat & Ijab Kabul', 
-      icon: require('../../assets/sejarah-dalil.png'),
+      icon: require('../assets/icons/SejarahDalil.png'),
       screen: 'NiatZakat'
     },
     { 
       id: 'kurban', 
       title: 'Kurban', 
-      icon: require('../../assets/kurban.png'),
+      icon: require('../assets/icons/kurban.png'),
       screen: 'Kurban'
     },
     { 
       id: 'settings', 
       title: 'Pengaturan', 
-      icon: require('../../assets/pengaturan.png'),
+      icon: require('../assets/icons/Pengaturan.png'),
       screen: 'Settings'
     },
   ];
@@ -102,7 +102,7 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.header}>
         <View style={styles.headerLeft}>
           <Image 
-            source={require('../../assets/icon.png')} 
+            source={require('../assets/icons/icon.png')} 
             style={styles.logo} 
           />
           <Text style={styles.title}>SiZakat</Text>
@@ -117,7 +117,7 @@ const HomeScreen = ({ navigation }) => {
           onPress={() => navigation.navigate('Login')}
         >
           <Image 
-            source={require('../../assets/keluar.png')} 
+            source={require('../assets/icons/Keluar.png')} 
             style={styles.logoutIcon} 
           />
         </TouchableOpacity>
