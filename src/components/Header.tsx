@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@/hooks/use-theme';
@@ -6,7 +5,7 @@ import { useToast } from '@/hooks/use-toast';
 import { format } from 'date-fns';
 import { id } from 'date-fns/locale';
 import HijriConverter from 'hijri-converter';
-import './Header.css';
+
 import {
   AlertDialog,
   AlertDialogAction,
