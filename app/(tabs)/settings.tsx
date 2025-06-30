@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, Switch, ScrollView, TouchableOpacity } from 'react-native';
 import { useState } from 'react';
-import { Settings, Moon, Bell, Shield, HelpCircle, Info } from 'lucide-react-native';
+import { Settings, Moon, Bell, Shield, CircleHelp as HelpCircle, Info } from 'lucide-react-native';
 
 export default function SettingsScreen() {
   const [darkMode, setDarkMode] = useState(false);
