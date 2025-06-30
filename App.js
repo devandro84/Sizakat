@@ -10,7 +10,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import PinLoginScreen from './src/screens/PinLoginScreen';
 import PaymentPage from './src/pages/PaymentPage';
-import ReportsScreen from './src/screens/ReportsScreen';
+import ReportsPage from './src/pages/ReportsPage';
 import RecipientsScreen from './src/screens/RecipientsScreen';
 import NiatZakatScreen from './src/screens/NiatZakatScreen';
 import ZakatMalScreen from './src/screens/ZakatMalScreen';
@@ -64,7 +64,7 @@ export default function App() {
           />
           <Stack.Screen 
             name="Reports" 
-            component={ReportsScreen} 
+            component={ReportsPage} 
             options={{ title: 'Laporan Zakat' }}
           />
           <Stack.Screen 
