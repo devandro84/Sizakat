@@ -9,7 +9,7 @@ import { initializeDatabase } from './src/utils/database';
 import HomeScreen from './src/screens/HomeScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import PinLoginScreen from './src/screens/PinLoginScreen';
-import PaymentScreen from './src/screens/PaymentScreen';
+import PaymentPage from './src/pages/PaymentPage';
 import ReportsScreen from './src/screens/ReportsScreen';
 import RecipientsScreen from './src/screens/RecipientsScreen';
 import NiatZakatScreen from './src/screens/NiatZakatScreen';
@@ -59,7 +59,7 @@ export default function App() {
           />
           <Stack.Screen 
             name="Payment" 
-            component={PaymentScreen} 
+            component={PaymentPage} 
             options={{ title: 'Pembayaran Zakat Fitrah' }}
           />
           <Stack.Screen 
